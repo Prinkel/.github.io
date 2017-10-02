@@ -1,54 +1,23 @@
-body {
-    font-family: Helvetica;
-    font-size: 16px;
-    color: white;
-    line-height: 1;
-    background-color: hotpink
-    
-}
-
-
-h1, h2{
-    color: white
-}
-
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu');
 
 body {
-    font-family: 'Droid Serif',Helvetica, Georgia, serif;
+    font-family: 'Droid Serif',Times, Georgia, serif;
     font-size: 16px;
     font-weight: normal;
-    background:url("achtergrond.jpg");
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Oswald', Helvetica, arail;
 }
-h1{
-    font-size: 50px;
-    text-align: center;
-}
-h3{
-    text-align: center;
-    padding: auto;
-    margin: 20px;
-    font-size: 30px;
-    text-transform: uppercase;
-    position: relative;
-    color: white;
-    
-}
+
 /* Layout */
 .header {
     width: 100%;
     padding: 20px;
     position: fixed;
     top: 0;
-    background-color: hotpink;
+    background-color: blue;
     box-sizing: border-box;
-    text-align: center;
 }
 .header h1{
     float: left;
@@ -61,19 +30,17 @@ h3{
     width: 100%;
     position: fixed;
     bottom:0;
-    background-color: hotpink
 }
 .content {
     margin: 200px auto;
     max-width: 700px;
-    background-color: hotpink;
+    background-color: greenyellow;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 .event {
     margin-bottom: 50px;
     position: relative;
-    color: white;
 }
 .event ul {
     font-family: 'Ubuntu';
@@ -84,7 +51,7 @@ h3{
 .event h3 {
     font-size: 2rem;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .event .location {
     width: 120px;
@@ -94,18 +61,5 @@ h3{
     top: -30px;
     right: 0px;
     background-color: yellow;
-    color: black;
     border-radius: 50%;
-}
-.secondbackground {
-    width: 50%;
-    margin: 100px auto;
-}
-
-.filmpje {
-    margin: auto;
-    width: 600px;
-}
-.contact{
-    
 }
