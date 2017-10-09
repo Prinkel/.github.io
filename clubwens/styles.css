@@ -1,133 +1,161 @@
 body {
-    font-family: Helvetica;
-    font-size: 16px;
-    color: white;
-    line-height: 1;
-    background-color: hotpink
-    
+	font-family: Helvetica;
+	font-size: 16px;
+	color: white;
+	line-height: 1;
+	background-color: hotpink
 }
-
-h1, h2{
-    color: white
+h1, h2 {
+	color: white
 }
-
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu');
-
 body {
-    font-family: 'Droid Serif',Helvetica, Georgia, serif;
-    font-size: 16px;
-    font-weight: normal;
-    background:url("achtergrond.jpg");
-    background-attachment: fixed;
-    background-size: cover;
+	font-family: 'Droid Serif', Helvetica, Georgia, serif;
+	font-size: 16px;
+	font-weight: normal;
+	background: url("achtergrond.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', Helvetica, arail;
+}
+.h1 {
+	font-size: 100px;
+	text-align: center;
+}
+h3 {
+	font-family: serif;
+	font-style: bold;
+	text-align: center;
+	padding: auto;
+	margin: 0px;
+	font-size: 40px;
+	text-transform: uppercase;
+	position: relative;
+	color: white;
+}
+footer {
+	text-align: center;
+	padding: auto;
+	margin: 0px;
+	font-size: 30px;
+	font-size: 30px;
+	text-transform: uppercase;
+	position: relative;
+	color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Oswald', Helvetica, arail;
-}
-h1{
-    font-size: 50px;
-    text-align: center;
-}
-.soon{
-    text-align: center;
-    padding: auto;
-    margin: 20px;
-    font-size: 150px;
-    text-transform: uppercase;
-    position: relative;
-    color: white;
-    
-}
-h3{
-    text-align: center;
-    padding: auto;
-    margin: 0px;
-    font-size: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    position: relative;
-    color: white;
-    
-}
-footer{
-    text-align: center;
-    padding: auto;
-    margin: 0px;
-    font-size: 30px;
-    font-size: 30px;
-    text-transform: uppercase;
-    position: relative;
-    color: white;
-    
-}
 /* Layout */
+
 .header {
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 30px;
-    position: fixed;
-    top: 0;
-    background-color: hotpink;
-    box-sizing: border-box;
-    text-align: center;
+    z-index: 999;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 30px;
+	position: fixed;
+	top: 0;
+	font-size: 80px;
+	background-color: blueviolet;
+	box-sizing: border-box;
+	text-align: center;
+	text-transform: uppercase
 }
-.header h1{
-    float: left;
+.header h1 {
+	float: center;
+    font-family: serif;
+    font-style: bold;
 }
-.header h2{
-    float: right;
-}
-.footer{
-    padding: 20px;
-    width: 100%;
-    position: fixed;
-    bottom:0;
-    background-color: hotpink
+.header h2 {
+	float: right;
 }
 .content {
-    margin: 200px auto;
-    max-width: 700px;
-    background-color: hotpink;
-    text-align: center;
-    padding: 15px;
+	margin: 200px auto;
+	max-width: 750px;
+	text-align: center;
+	padding: 15px;
 }
 .event {
-    margin-bottom: 50px;
-    position: relative;
-    color: white;
+    width:500px;
+	margin: auto;
+	position: relative;
+	color: white;
 }
 .event ul {
-    font-family: 'Ubuntu';
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: bold;
+    background-color: hotpink;
+	font-family: 'Ubuntu';
+	font-style: italic;
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .event h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-decoration: none;
+	font-size: 40px;
+    color: hotpink;
+    background-color: white;
+	text-transform: uppercase;
+	text-decoration: none;
 }
-.event .location {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
+.footer {
+	padding: 20px;
+	width: 100%;
+	position: relative;
+	bottom: 0px;
+	margin-top: 50px;
+	background-color: blueviolet;
+}
+.vlag1, .vlag2{
+    width:200px;
+    margin:auto;
+    position: relative;
+    text-align: center;
+}
+.vlag1 img,.vlag2 img{
+    width: 100%
+}
+@media screen and (min-width: 600px) {
+  .vlag1 {
     position: absolute;
-    top: -30px;
-    right: 0px;
-    background-color: yellow;
-    color: black;
-    border-radius: 50%;
-}
-.secondbackground {
-    width: 50%;
-    margin: 100px auto;
+    top: 0px;
+    left: -150px;
+  }
+  .vlag2 {
+    position: absolute;
+    top: 0px;
+    right: -150px;
+  }
 }
 
+.Teaserbox {
+	background-color: hotpink;
+	border-color: hotpink;
+	border-style: solid;
+	border-width:40px;
+
+}
 .filmpje {
-    margin: auto;
-    width: 600px;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
 }
-.contact{
-    
+.filmpje iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
+.secondbackground {
+	width: 50%;
+	margin: 100px auto;
+}
+
+}
+.contact {}
+
+
+
+
+
+
