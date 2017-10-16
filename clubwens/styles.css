@@ -124,6 +124,12 @@ footer {
     top: 80px;
     right: -220px;
   }
+    
+    @media screen and (min-width: 600px) {
+  .h1 {
+      width: auto;
+    position: absolute;
+  }
 }
 
 .Teaserbox {
