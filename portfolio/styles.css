@@ -3,7 +3,6 @@
 body{
     background-color:#ffdd10;
     font-family: 'Varela Round', sans-serif;
-    
 }
 
 .circle {
@@ -103,7 +102,7 @@ a:link, a:visited{
 }
 
 
-/* RECTANGLE PAGE */
+/* Project Sub PAGE */
 
 .contentrectangle img{
     width: 50%;
