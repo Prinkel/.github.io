@@ -4,6 +4,26 @@ body{
     background-color:#ffdd10;
     font-family: 'Varela Round', sans-serif;
 }
+#cookie-law {
+    position: fixed;
+    z-index: 99999;
+    max-width:px;
+    background:red; 
+    margin-left:25%;
+    margin-right: 25%;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+}
+ 
+#cookie-law p { 
+    padding:10px; 
+    font-size:1.2em; 
+    font-weight:bold; 
+    text-align:center; 
+    color:black; 
+    margin:10px;
+}
 
 .circle {
   width: 50px;
@@ -66,7 +86,7 @@ header{
     position: fixed;
     top: 0px;
     background: red;
-    z-index: 99999;
+    z-index: 999;
     box-sizing: border-box;
     color: black;
     border: 3px solid black;
