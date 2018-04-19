@@ -6,7 +6,7 @@ body{
 }
 #cookie-law {
     position: fixed;
-    z-index: 99;
+    z-index: 9999999;
     max-width:px;
     background:red; 
     margin-left:25%;
