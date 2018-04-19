@@ -6,14 +6,12 @@ body{
 }
 #cookie-law {
     position: fixed;
-    z-index: 9999999;
-    max-width:px;
+    z-index: 99999;
+    max-width:1000px;
     background:red; 
     margin-left:25%;
     margin-right: 25%;
     border-radius: 17px;
-    -webkit-border-radius: 17px;
-    -moz-border-radius: 17px;
 }
  
 #cookie-law p { 
