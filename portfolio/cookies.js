@@ -1,6 +1,6 @@
 // Creare's 'Implied Consent' EU Cookie Law Banner v:2.4
 // Conceived by Robert Kent, James Bavington & Tom Foyster
-var dropCookie = true;
+var dropCookie = false;
 // false disables the Cookie, allowing you to style the banner
 var cookieDuration = 14; 
 // Number of days before the cookie expires, and the banner reappears
@@ -13,11 +13,11 @@ div.setAttribute('id','cookie-law');
 div.innerHTML = '<p>Our website uses cookies. By continuing we assume your permission to deploy cookies, as detailed in our <a href="/privacy-cookies-policy/" rel="nofollow" title="Privacy &amp; Cookies Policy">privacy and cookies policy</a>.  <a class="close-cookie-banner" href="javascript:void(0);" onclick="removeMe();"><span>X</span></a></p>';
 // Be advised the Close Banner 'X' link requires jQuery
     
-// bodytag.appendChild(div); // Adds the Cookie Law Banner just before the closing </body> tag
+ bodytag.appendChild(div); // Adds the Cookie Law Banner just before the closing </body> tag
 
     // or
     
-bodytag.insertBefore(div,bodytag.firstChild); // Adds the Cookie Law Banner just after the opening <body> tag
+//bodytag.insertBefore(div,bodytag.firstChild); // Adds the Cookie Law Banner just after the opening <body> tag
 document.getElementsByTagName('body')[0].className+=' cookiebanner'; //Adds a class tothe <body> tag when the banner is visible
 createCookie(window.cookieName,window.cookieValue, window.cookieDuration); // Create the cookie
 }
