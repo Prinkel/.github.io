@@ -1,30 +1,75 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 body{
-    background-color:#ffdd10;
+    background-color:beige;
     font-family: 'Varela Round', sans-serif;
 }
-#cookie-law {
-    position: fixed;
+
+/* BEGIN COOKIE ALERT */
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
     z-index: 99999;
-    max-width:1000px;
-    background:red; 
+    max-width: 1000px;
     margin-left:25%;
     margin-right: 25%;
-    border-radius: 17px;
+    background:#CCCCCC;
+    vertical-align: middle;
+    text-align: center;
+    padding: 8px;
+
 }
- 
-#cookie-law p { 
-    padding:10px; 
-    font-size:1.2em; 
-    font-weight:bold; 
-    text-align:center; 
-    color:black; 
-    margin:10px;
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #CCCCCC;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 99999;
+    bottom: 125%;
+    left: 20%;
+    border: 3px solid black;
 }
 
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 103%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* END COOKIE ALERT */
+
 .contentmainpage{
-    margin: 50px;
+    margin: 20px;
     margin-top: 100px;
     font-size:20px;
 }
@@ -41,11 +86,9 @@ body{
     position: relative;
 }
 
-
 .project img {
     width: 100%;
 }
-
 
 .project-text {
   padding: 15px;
@@ -54,16 +97,17 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background: beige;
   cursor: pointer;
   transition: all .3s ease;
   box-sizing: border-box;
-color: blue;
+  color: black;
+border: 3px solid black;
 }
 
 .bluebox{
-  background: blue;
-    color: white;
+  background: #FF7000;
+    color: black;
 }
 
 .project-text:hover {
@@ -74,17 +118,18 @@ header{
     width:100%;
     position: fixed;
     top: 0px;
-    background: red;
+    background: #CCCCCC;
     z-index: 999;
     box-sizing: border-box;
     color: black;
-    border: 3px solid black;
+    
 }
+
 header h1{
     float:left;
     font-size: 40px;
     margin: 5px;
-    margin-left: 15px;
+    margin-left: 35px;
     color: black;
 }
 header nav{
@@ -99,7 +144,7 @@ header nav ul li{
     margin-right: 1em;
 }
 header nav ul li a:hover{
-    color:blue;
+    color:orangered;
 }
 a:link, a:visited{
     color: black;
@@ -107,24 +152,16 @@ a:link, a:visited{
 }
 .footer p{
     text-align: center;
+    margin: 15px;
     clear: left;
 }
 
-
 /* Project Sub PAGE */
-
-.contentrectangle img{
-    width: 50%;
-    padding: 10px;
-    margin-top: 0px;
-    float: left;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
 .tekst {
     margin-right: 50px;
     margin-top: 60px;
     margin-left: 20px;
+    float: none;
 }
 
 .tekst h1 {
@@ -132,6 +169,69 @@ a:link, a:visited{
     padding-bottom: 9px;
 }
 
+.contentrectangle img{
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right:10px;
+}
 
+/* Responsive Styles */
 
-
+@media screen and (max-width:599px){
+    header{
+        text-align: center;
+    }
+    
+    header h1, header nav {
+        float: none;
+        margin: 0px;
+    margin-top: 10px;
+    }
+    header nav{
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+    .contentmainpage{
+    margin: 10px;
+    margin-top: 80px;
+    font-size:12px;
+}
+    
+.tekst {
+    margin-right: 0px;
+    margin-top: 60px;
+    margin-left: 20px;
+    float: left;
+}
+    .contentrectangle img{
+    width: 50%;
+    padding: 10px;
+    margin-top: 30px;
+    float: left;
+    margin-bottom: -40px;
+    margin-left: 20px;
+    margin-right:10px;
+}
+    .project-text {
+    border: 2px solid black;
+    }
+    .tekst {
+        padding: 20px;
+        float: inherit;
+    }
+    .tekst h1{
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #footer{
+        font-size: 12px;
+    }
+    .popup{
+        font-size: 12px;
+    }
