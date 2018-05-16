@@ -199,7 +199,7 @@ a:link, a:visited{
     }
     footer nav ul li {
         display: inline-block;
-        padding: 0.4em;
+        padding: 0.2em;
     }
     footer nav ul li a:hover{
     color:orangered;
