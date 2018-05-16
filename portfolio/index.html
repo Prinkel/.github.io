@@ -101,7 +101,7 @@
 			</div>
             
 			<div class="project">
-				<a href="strangersonatrain.html">
+				<a href="fantasticvoyage.html">
                     <div class="project-text">
                     <p>Fantastic Voyage</p>
 				</div>
@@ -119,16 +119,22 @@
             
 	</section>
 	<footer>
-    <div class="popup" onclick="myFunction()">Our website uses cookies. By continuing we assume your permission to deploy cookies, as detailed in our Cookies and Privacy policy.
-  <span class="popuptext" id="myPopup">We use cookies to track our user experience. This data is strictly personal and we will not use this to sell at third parties.
-        </span>
-</div>
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <script>
-// When the user clicks on <div>, open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "darkorange"
+        "text":"black" 
+    }
+  }
+})});
 </script>
         
 		<div class="footer">
